@@ -38,10 +38,11 @@ When using shell programming, you can use different programs combinations in ord
 
 This will split a line by ':', using a ':' as separator. In this case, we're getting only the first match; second line, the second match; third, both of them:
 
-```grep -rnP '\d{11}' . | cut -d ':' -f1
+```
+grep -rnP '\d{11}' . | cut -d ':' -f1
 grep -rnP '\d{11}' . | cut -d ':' -f2
-grep -rnP '\d{11}' . | cut -d ':' -f1,2```
-
+grep -rnP '\d{11}' . | cut -d ':' -f1,2
+```
 
 If you want to efectivelly use the match data as a variable, you can use awk! So, you can get the same response doind the following:
 
